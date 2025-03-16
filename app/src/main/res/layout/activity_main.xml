@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECECEC"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <!-- Màn hình hiển thị kết quả -->
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:background="#D3D3D3"
+        android:gravity="end"
+        android:padding="20dp"
+        android:text="0"
+        android:textColor="#000"
+        android:textSize="40sp" />
+
+    <!-- Lưới nút -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:columnCount="4">
+
+        <!-- Hàng 1 -->
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onClear"
+            android:text="CE" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onClear"
+            android:text="C" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onBackspace"
+            android:text="BS" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onOperator"
+            android:text="/" />
+
+        <!-- Hàng 2 -->
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onNumber"
+            android:text="7" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onNumber"
+            android:text="8" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onNumber"
+            android:text="9" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onOperator"
+            android:text="x" />
+
+        <!-- Hàng 3 -->
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onNumber"
+            android:text="4" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onNumber"
+            android:text="5" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onNumber"
+            android:text="6" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onOperator"
+            android:text="-" />
+
+        <!-- Hàng 4 -->
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onNumber"
+            android:text="1" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onNumber"
+            android:text="2" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onNumber"
+            android:text="3" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onOperator"
+            android:text="+" />
+
+        <!-- Hàng 5 -->
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onToggleSign"
+            android:text="+/-" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onNumber"
+            android:text="0" />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onNumber"
+            android:text="." />
+
+        <Button
+            style="@style/CalcButton"
+            android:onClick="onEqual"
+            android:text="=" />
+
+    </GridLayout>
+
+</LinearLayout>
